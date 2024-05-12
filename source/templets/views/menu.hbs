@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Dine Delight - Bootstrap Restaurant Template</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+       
+
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-xxl position-relative p-0">
+            {{>navbar}}
+
+            <div class="container-xxl py-5 bg-dark hero-header mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Food Menu</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="/">Home</a></li>
+                            {{!-- <li class="breadcrumb-item"><a href="#">Pages</a></li> --}}
+                            <li class="breadcrumb-item text-white active" aria-current="page">Menu</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Navbar & Hero End -->
+
+
+        <!-- Menu Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
+                    <h1 class="mb-5">Most Popular Items</h1>
+                </div>
+                <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active"
+                                data-bs-toggle="pill" href="#tab-1">
+                                <i class="fa fa-coffee fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Popular</small>
+                                    <h6 class="mt-n1 mb-0">Breakfast</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill"
+                                href="#tab-2">
+                                <i class="fa fa-hamburger fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Special</small>
+                                    <h6 class="mt-n1 mb-0">Lunch</h6>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill"
+                                href="#tab-3">
+                                <i class="fa fa-utensils fa-2x text-primary"></i>
+                                <div class="ps-3">
+                                    <small class="text-body">Lovely</small>
+                                    <h6 class="mt-n1 mb-0">Dinner</h6>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/breakfast 1.jpg"
+                                            alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Dosa</span>
+                                                <span class="text-primary">₹150 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">Thin, crispy pancakes made from a fermented
+                                                rice and lentil batter, usually filled with spiced potatoes</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/breakfast 2.jpg"
+                                            alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Upma, Idli</span>
+                                                <span class="text-primary">₹100 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"A savory dish made from roasted semolina
+                                                (suji) cooked with spices and vegetables.Steamed rice cakes made
+                                                from fermented rice and lentil batter, often served with sambar and
+                                                coconut chutney."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/breakfast 3.jpg"
+                                            alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Vermicelli Upma</span>
+                                                <span class="text-primary">₹200 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"A variation of upma made with roasted
+                                                vermicelli noodles, spices, and vegetables."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/breakfast 4.jpg"
+                                            alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Poha, Paratha</span>
+                                                <span class="text-primary">₹160 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"Flattened rice cooked with spices, peanuts,
+                                                and vegetables. Flaky and stuffed flatbreads, often filled with
+                                                potato
+                                                (aloo), paneer, or various other ingredients."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/breakfast 5.webp"
+                                            alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Medu Vada, Snacks</span>
+                                                <span class="text-primary">₹150 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"A spicy curry made from sprouted moth beans,
+                                                often served with pav."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/breakfast 6.webp"
+                                            alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Misal Pav</span>
+                                                <span class="text-primary">₹150 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"Savor the delightful duo of crispy potato
+                                                fingers with ketchup and a fluffy egg omelet, a delicious combo that
+                                                satisfies cravings."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/breakfast 7.jpeg"
+                                            alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Chapati/Roti, Uttapam</span>
+                                                <span class="text-primary">₹200 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"Thick, savory pancakes made from fermented
+                                                rice and lentil batter, with various toppings.Unleavened whole wheat
+                                                flatbreads, a staple breakfast item in many Indian households
+                                                ."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/breakfast 8.jpg"
+                                            alt="" style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Methi Thepla, Rava Kesari</span>
+                                                <span class="text-primary">₹200 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"Flatbreads made with fenugreek leaves and
+                                                spices, popular in the state of Gujarat,A sweet semolina dessert
+                                                flavored with ghee, saffron, and cardamom ."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Lunch 1.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Biryani, Butter Chicken</span>
+                                                <span class="text-primary">₹300 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">A flavorful and aromatic rice dish cooked with
+                                                spices and either chicken, mutton, or vegetables. Creamy
+                                                tomato-based gravy with tender pieces of chicken. </small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Lunch 2.webp" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Tandoori Chicken, Dal Makhani</span>
+                                                <span class="text-primary">₹350 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">Marinated chicken cooked in a tandoor
+                                                , resulting in a smoky and flavorful dish.A rich and creamy
+                                                lentil dish made with black lentils and kidney beans.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Lunch 3.webp" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Paneer Tikka, Rajma Chawal</span>
+                                                <span class="text-primary">₹200 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">Marinated and grilled paneer
+                                                served with mint chutney. Kidney bean curry served with steamed
+                                                rice.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Lunch 4.webp" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Aloo Paratha, Chole Bhature</span>
+                                                <span class="text-primary">₹150 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">Whole wheat flatbread stuffed with spiced
+                                                mashed potatoes, typically served with yogurt or pickles.A North
+                                                Indian dish consisting of spicy chickpea
+                                                curry served with deep-fried bread.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Lunch 5.avif" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Bhindi Masala, Hyderabadi Biryani, Roti</span>
+                                                <span class="text-primary">₹400 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">Ladyfinger cooked with spices and tomatoes.
+                                                Whole wheat bread cooked in a tandoor.
+                                                A famous biryani variation from Hyderabad, often
+                                                made with basmati rice and tender pieces of meat.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Lunch 6.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Dosa, Fish Curry, Thali</span>
+                                                <span class="text-primary">₹450 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">A South Indian crepe made from fermented rice
+                                                and lentil batter, typically served with coconut chutney and sambar.
+                                                Coastal regions of India offer a variety of fish curries
+                                                with different spices and flavors.
+                                                A complete meal that includes a selection of various dishes,
+                                                such as rice, roti, vegetables, curries,
+                                                and more</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Lunch 7.webp" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Mutton Rogan Josh, Egg Curry,Methi Thepla</span>
+                                                <span class="text-primary">₹400 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">A rich and aromatic Kashmiri curry made with
+                                                tender pieces of mutton.Eggs cooked in a flavorful tomato-based
+                                                gravy.
+                                                Flatbreads made with fenugreek leaves and spices, a
+                                                popular dish in Gujarat</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/Lunch 8.webp" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Samosa, Poha, Kadhi</span>
+                                                <span class="text-primary">₹120 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">Deep-fried pastry filled with spiced potatoes,
+                                                peas, and sometimes minced meat.
+                                                Flattened rice cooked with spices, peanuts, and vegetables.
+                                                A yogurt-based curry with gram flour and various spices,
+                                                often served with rice or khichdi</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Starter</span>
+                                                <span class="text-primary">₹150 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">Delight in our extensive range of appetizers,
+                                                both vegetarian and non-vegetarian, offering a diverse selection to
+                                                tantalize your taste buds</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-2.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Prawns, other dishes</span>
+                                                <span class="text-primary">₹300 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"Discover a world of flavors with our prawns,
+                                                rice, dal, and a variety of other delectable dishes, a feast to
+                                                relish."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-3.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Veg, Non Veg Thali</span>
+                                                <span class="text-primary">₹400 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"Experience a grand feast with our veg and
+                                                non-veg thalis, each boasting over 15 delectable items, a true
+                                                culinary
+                                                extravaganza."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-4.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Veg, Chicken Cutlets</span>
+                                                <span class="text-primary">₹250 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"Enjoy a diverse culinary experience with our
+                                                veg and chicken cutlets, a harmonious blend of flavors and textures
+                                                in
+                                                every bite."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-5.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Snacks, Pani Puri</span>
+                                                <span class="text-primary">₹200 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"Indulge in the perfect combination of crispy
+                                                snacks and our flavorful pani puri, a delightful culinary adventure
+                                                in
+                                                every bite."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-6.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Potato Fingers, Egg Omelet</span>
+                                                <span class="text-primary">₹250 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"Savor the delightful duo of crispy potato
+                                                fingers with ketchup and a fluffy egg omelet, a delicious combo that
+                                                satisfies cravings."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-7.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Pizza</span>
+                                                <span class="text-primary">₹300 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"Explore our diverse pizza selection,
+                                                featuring an array of flavors and toppings that cater to every pizza
+                                                lover's
+                                                taste."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="d-flex align-items-center">
+                                        <img class="flex-shrink-0 img-fluid rounded" src="img/menu-8.jpg" alt=""
+                                            style="width: 80px;">
+                                        <div class="w-100 d-flex flex-column text-start ps-4">
+                                            <h5 class="d-flex justify-content-between border-bottom pb-2">
+                                                <span>Desserts, Sweet</span>
+                                                <span class="text-primary">₹200 onwards</span>
+                                            </h5>
+                                            <small class="fst-italic">"Indulge in heavenly ice cream and a wide
+                                                array of delectable desserts, a sweet paradise for your taste
+                                                buds."</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Menu End -->
+
+
+        <!-- Footer Start -->
+        {{>footer}}
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    {{>libraries}}
+
+    <!-- Template Javascript -->
+    <script src="../../main.js"></script>
+</body>
+
+</html>
